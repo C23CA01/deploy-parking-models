@@ -1,0 +1,4 @@
+/venv
+/__pycache__
+/YoloWeights/saved_model
+/YoloWeights/yolov3_training_final.weights
