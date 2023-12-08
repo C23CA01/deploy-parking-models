@@ -13,5 +13,6 @@ https://drive.google.com/drive/folders/1P0dMxlv87aGx2GUUwvt57ZJt6G7J4e-j?usp=sha
 ### 1.2 Contoh database jika script capture bekerja otomatis untuk memasuki prediksi model :
 ![Uji di local](./dokumentasi/ss2.png)
 
-
+### 1.3 disiasati video sebagai sumber dari cctv, lalu tiap 10 menitnya akan di captur lalu di hit ke modelAPI:
+![Uji di local](./dokumentasi/ss3.png)
 
