@@ -15,7 +15,7 @@ import os
 
 # customize your API through the following parameters
 classes_path = './data/labels/coco.names'
-weights_path = './parkingmodel.h5'
+weights_path = 'parkingmodel.h5'
 tiny = False                    # set to True if using a Yolov3 Tiny model
 size = 416                      # size images are resized to for model
 output_path = '/'   # path to output folder where images with detections are saved
