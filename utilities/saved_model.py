@@ -6,7 +6,7 @@ from yolotf2.utils import load_darknet_weights
 
 # move to app.py
 flags.DEFINE_string('weights', './yolov3_training_final.weights', 'path to weights file')
-flags.DEFINE_string('output', './parkingmodel.h5', 'path to output .h5 file')  # Modified file extension
+flags.DEFINE_string('output', 'parkingmodel.h5', 'path to output .h5 file')  # Modified file extension
 flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 flags.DEFINE_integer('num_classes', 1, 'number of classes in the model')
 
