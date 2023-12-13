@@ -1,8 +1,8 @@
-FROM python:3.9-slim-buster
+# py3.9/3.10
+FROM python:3.9
 
-# Install dependencies for MySQL
 RUN apt-get update && \
-    apt-get install -y libmariadb-dev-compat libmariadb-dev && \
+    apt-get install -y libgl1-mesa-glx && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /parking-app
@@ -13,9 +13,26 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENV FLASK_APP=app.py
-ENV HOST 0.0.0.0
+CMD ["python", "app.py"]
 
-EXPOSE 5000
+# FROM python:3.9-slim-buster
 
-CMD ["flask", "run", "--host", "0.0.0.0"]
+# # Install dependencies for MySQL
+# RUN apt-get update && \
+#     apt-get install -y libmariadb-dev-compat libmariadb-dev && \
+#     rm -rf /var/lib/apt/lists/*
+
+# WORKDIR /parking-app
+
+# COPY requirements.txt .
+
+# RUN pip install -r requirements.txt
+
+# COPY . .
+
+# ENV FLASK_APP=app.py
+# ENV HOST 0.0.0.0
+
+# EXPOSE 5000
+
+# CMD ["flask", "run", "--host", "0.0.0.0"]
